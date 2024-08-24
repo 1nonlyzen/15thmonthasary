@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>15 Months of Love</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #ff4d4d; /* Solid background color */
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      margin: 0;
+      overflow-x: hidden;
+    }
+    h1, h2, p {
+      margin: 20px 0;
+      animation: fadeIn 2s ease-in-out;
+    }
+    h1, h2 {
+      font-size: 2rem;
+      text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 1.4rem;
+      line-height: 1.6;
+      padding: 0 10px;
+      text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.5);
+      display: none; /* Start hidden for fade-in */
+    }
+    .heart-button, .game-button {
+      display: inline-block;
+      padding: 15px 30px;
+      margin: 20px 0;
+      background-color: #ff3366;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: transform 0.3s;
+      box-shadow: 0px 4px 15px rgba(255, 51, 102, 0.6);
+    }
+    .game-button {
+      background-color: #ffcc00; /* Game-themed color */
+      color: #000;
+    }
+    .heart-button:hover, .game-button:hover {
+      transform: scale(1.1);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .sparkle-effect {
+      font-size: 2rem;
+      animation: sparkle 3s infinite ease-in-out;
+      text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
+    }
+    @keyframes sparkle {
+      0%, 100% { text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); }
+      50% { text-shadow: 0 0 20px rgba(255, 255, 255, 1); }
+    }
+    .floating-hearts, .floating-15th {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 0;
+    }
+    .floating-hearts div, .floating-15th div {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background-size: cover;
+      animation: float 8s linear infinite;
+    }
+    .floating-hearts div {
+      background: url('https://img.icons8.com/emoji/48/000000/red-heart.png') no-repeat center;
+    }
+    .floating-15th div {
+      font-size: 1.5rem;
+      color: #fff;
+      font-weight: bold;
+      text-align: center;
+      line-height: 40px;
+      background: none;
+    }
+    @keyframes float {
+      0% {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-200%);
+        opacity: 0;
+      }
+    }
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      h1, h2 {
+        font-size: 1.8rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+      .heart-button, .game-button {
+        padding: 12px 24px;
+        font-size: 0.9rem;
+      }
+      .floating-hearts div, .floating-15th div {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Page 1: Intro -->
+  <div id="page1">
+    <h1>HAPPY MONTHSARY MY LOVE!</h1>
+    <p>Here's a little something for you</p>
+    <a href="#page2" class="heart-button">❤️</a>
+  </div>
+
+  <!-- Page 2: Poem -->
+  <div id="page2" style="display:none;">
+    <h2>Syempre tula muna bago message</h2>
+    <p id="poem-line1">Fifteen months of endless bliss,</p>
+    <p id="poem-line2">In every smile, in every kiss.</p>
+    <p id="poem-line3">You are my joy, my endless light,</p>
+    <p id="poem-line4">My comfort in the darkest night.</p>
+    <p id="poem-line5">With you, love feels soft and true,</p>
+    <p id="poem-line6">In your eyes, I see skies of blue.</p>
+    <p id="poem-line7">My heart is yours, forever and more,</p>
+    <p id="poem-line8">To cherish and hold, as love’s sweet core.</p>
+    <a href="#page3" class="heart-button">Eto na, message na</a>
+  </div>
+
+  <!-- Page 3: First Message -->
+  <div id="page3" style="display:none;">
+    <h2>15 months of love with you ♡</h2>
+    <p id="msg-line1">Happy 15th monthsary my love!</p>
+    <p id="msg-line2">Sobrang thankful ako na dumating tayo sa punto na ito at lagi kong i-che-cherish ang ating pagmamahalan sa isa't isa dahil ang relationship na ito ay isa sa pinakamalaking biyaya na binigay sa atin ni Lord.</p>
+    <p id="msg-line3">Masaya ako na nandito ka, sa tabi ko, sa braso ko, sa piling ko, at syempre sa loob ng puso't isipan ko.</p>
+    <p id="msg-line4">Alam ko minsan na nag aaway away tayo pero kahit anong mangyari di natin papalagpasin ang mga yan at patuloy tayong matututo at mag i-improve sa bawat pagtatalo natin sa isa't isa.</p>
+    <a href="#page4" class="heart-button">Next</a>
+  </div>
+
+  <!-- Page 4: Continuation -->
+  <div id="page4" style="display:none;">
+    <p id="msg2-line1">Every day with you feels like a beautiful journey filled with laughter, growth, and endless love.</p>
+    <p id="msg2-line2">We’ve shared so many precious moments together, and I cherish each one more than words can express.</p>
+    <p id="msg2-line3">You make my world brighter, my days happier, and my heart fuller.</p>
+    <p id="msg2-line4">To me, you are one of a kind.</p>
+    <a href="#page5" class="heart-button">Next</a>
+  </div>
+
+  <!-- Page 5: The Little Prince Message -->
+  <div id="page5" style="display:none;">
+    <p id="msg3-line1">In the novelette "The Little Prince," you serve as my rose.</p>
+    <p id="msg3-line2">The Little Prince had also had a rose which whom he cherished a lot because she is unique to him, and that goes the same as you to me.</p>
+    <p id="msg3-line3">You are unique, my love.</p>
+    <p id="msg3-line4">Although when he found out that there are different roses once he explored the world, he still considered his own rose unique and special.</p>
+    <p id="msg3-line5">Just like you, kahit madaming babae dyan, no one will ever come close to you because you are special to me.</p>
+    <p id="msg3-line6">What makes you different and special from the other girls is the time and the connection that I have for you.</p>
+    <a href="#page6" class="game-button">Next Level ➡️</a>
+  </div>
+
+   <!-- Page 6: Video Game-Themed Message -->
+  <div id="page6" style="display:none; background: #000; color: #ffcc00;">
+    <h2 style="color: #ffcc00;">🎮 Our Journey Together 🎮</h2>
+    <p id="game-msg1">I know we’ve been aiming for certain goals in our game together,</p>
+    <p id="game-msg2">and while it’s fun and motivating, what truly matters to me is the time we spend together.</p>
+    <p id="game-msg3">Even if we don’t reach those goals, the real victory is in how much we’ve strengthened our bond,</p>
+    <p id="game-msg4">learned to work as a team, and created moments that make us even closer.</p>
+    <p id="game-msg5">The game is just a small part of our love story,</p>
+    <p id="game-msg6">and I’m so proud that we’re writing it together.</p>
+    <a href="#page7" class="heart-button">Continue ➡️</a>
+  </div>
+
+  <!-- Page 7: Final Message -->
+  <div id="page7" style="display:none; background-color: #ff6666; color: #fff;">
+    <h2 class="sparkle-effect" style="font-size: 2.5rem; margin-top: 40px;">Happy 15th Monthsary, My Love!</h2>
+    <p style="font-size: 1.8rem; line-height: 2; margin: 20px 10px;">You'll always be the one who fills my heart with endless love and joy. <br> Thank you for being the player two in our adventure together.</p>
+    <div class="floating-hearts">
+      <div style="left: 15%; animation-delay: 0s;"></div>
+      <div style="left: 50%; animation-delay: 2s;"></div>
+      <div style="left: 85%; animation-delay: 4s;"></div>
+    </div>
+    <div class="floating-15th">
+      <div style="left: 25%; animation-delay: 1s; font-size: 2rem;">15th</div>
+      <div style="left: 60%; animation-delay: 3s; font-size: 2rem;">15th</div>
+    </div>
+    <p style="font-size: 1.5rem; margin: 30px 10px; text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);">Our love story is just getting started! Here's to many more beautiful months together. 🌹💖</p>
+    <a href="#page1" class="heart-button" style="margin-top: 30px;">Restart ➰</a>
+  </div>
+
+  <script>
+    const pages = document.querySelectorAll('div[id^="page"]');
+    document.querySelectorAll('.heart-button, .game-button').forEach((button, index) => {
+      button.addEventListener('click', function() {
+        pages[index].style.display = 'none';
+        pages[index + 1].style.display = 'block';
+      });
+    });
+
+    // Line-by-line fade-in for poem and messages
+    const poemLines = document.querySelectorAll('#page2 p');
+    poemLines.forEach((line, i) => {
+      setTimeout(() => {
+        line.style.display = 'block';
+        line.style.animation = 'fadeIn 1.5s ease-in-out forwards';
+      }, i * 1500); // Stagger the appearance of each line
+    });
+
+    const msgLines = document.querySelectorAll('#page3 p, #page4 p, #page5 p, #page6 p');
+    msgLines.forEach((line, i) => {
+      setTimeout(() => {
+        line.style.display = 'block';
+        line.style.animation = 'fadeIn 1.5s ease-in-out forwards';
+      }, i * 2000); // Stagger the appearance of each line
+    });
+  </script>
+
+</body>
+</html>
+
